@@ -1,13 +1,15 @@
 # DHT11
-#Load the Adafruit code to your python library
-#https://github.com/adafruit/Adafruit_Python_DHT
+##Load the Adafruit code to your python library
+https://github.com/adafruit/Adafruit_Python_DHT
 
-#add logDHT11.py
+* Add logDHT11.py to your python directory
 
-#Put the following code in the logSensors.py file, so cron will pick this up.
+* Put the following code in the logSensors.py file, so cron will pick this up.
 
-#add to import statements
-from logDHT11 import logTempHumid
+* At the top, with the other import statements, add:
+  
+> from logDHT11 import logTempHumid
 
-#add to code section
-logTempHumid()
+* Add to code section:
+
+> logTempHumid()
