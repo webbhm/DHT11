@@ -37,10 +37,10 @@ def logTempHumid()
 # If this happens try again!
     if humidity is not None and temperature is not None:
         print('Temp={0:0.1f}*  Humidity={1:0.1f}%'.format(temperature, humidity))
-        logData("Temperature DH11", "{:10.1f}".format(temperture), '')
-        logData("Humidity DH11", "{:10.1f}".format(humidity), '')
+        logData("Temperature DH11", "Success", "temperature", "{:10.1f}".format(temperture), '')
+        logData("Humidity DH11", "Success", "humidity", "{:10.1f}".format(humidity), '')
     else:
         print('Failed to get DHT11 reading. Try again!')
-        logData("Temperature DH11", "Failure", '')
+        logData("Temperature DH11", "Failure", "temperature", "", '')
 
-logTempHumidity()        
+#logTempHumidity()        
